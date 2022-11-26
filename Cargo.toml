@@ -1,0 +1,14 @@
+[package]
+name = "zkp-demos"
+version = "0.1.0"
+edition = "2021"
+authors = ["sufay"]
+
+[dependencies]
+ark-ff = { version = "^0.3.0", default-features = false }
+ark-groth16 = { version = "^0.3.0", default-features = false }
+ark-std = { version = "^0.3.0", default-features = false }
+ark-relations = { version = "^0.3.0", default-features = false }
+ark-r1cs-std = { version = "^0.3.0", default-features = false }
+ark-bls12-381 = { version = "^0.3.0", default-features = false, features = ["curve"] }
+ark-crypto-primitives = { git = "https://github.com/suefay/crypto-primitives.git", rev = "f4d8148", features = ["r1cs"] }
